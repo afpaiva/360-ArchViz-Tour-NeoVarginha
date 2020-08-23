@@ -1,5 +1,7 @@
 # Annotations
 
+https://www.youtube.com/watch?v=LbLOXsDVyaM&t=2936s
+
 ## Sphere
 
 *SphereGeometry(radius : Float, widthSegments : Integer, heightSegments : Integer, phiStart : Float, phiLength : Float, thetaStart : Float, thetaLength : Float)*

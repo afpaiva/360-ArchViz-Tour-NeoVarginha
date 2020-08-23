@@ -1,4 +1,4 @@
-const container = document.body;
+const container = document.querySelector(".viewport");
 const hotspotLabel = document.querySelector(".hotspotLabel");
 let hotspotLabelActive = false;
 
@@ -28,7 +28,7 @@ function addTooltip (position, label) {
     let sprite = new THREE.Sprite( spriteMaterial );
     sprite.name = label;
     sprite.position.copy(position.clone().normalize().multiplyScalar(30));
-    sprite.scale.multiplyScalar(2);
+    sprite.scale.multiplyScalar(3);
     scene.add( sprite );
 }
 
@@ -94,9 +94,10 @@ function onMouseMove(e){
     intersectS.forEach(function (intersectS) {
         if (intersectS.object.type === 'Sprite') {
             let p = intersectS.object.position.clone().project(camera);
-            //hotspotLabel.style.top  = ((-1 * p.y + 1) * window.innerHeight / 2) + 'px';
-            //hotspotLabel.style.left = ((p.x + 1 ) * window.innerWidth / 2) + 'px';
+            hotspotLabel.style.top  = (((-1 * p.y + 1) * window.innerHeight / 2)-55) + 'px';
+            hotspotLabel.style.left = (((p.x + 1 ) * window.innerWidth / 2)+20) + 'px';
             hotspotLabel.classList.add('is-active');
+            hotspotLabel.innerHTML = intersectS.object.name;
             hotspotLabelActive = true;
             foundSprite = true;
         }
@@ -107,10 +108,16 @@ function onMouseMove(e){
 }
 
 addTooltip(new THREE.Vector3(
-    -49,
-    0.48,
-    -0.17
-    ), 'Ponto!');
+-49,
+0,
+-0
+), 'Calçada');
+
+addTooltip(new THREE.Vector3(
+-41,
+-12,
+-24
+), 'Ponte');
 
 window.addEventListener('resize', onResize);
 container.addEventListener('click', onClick);
