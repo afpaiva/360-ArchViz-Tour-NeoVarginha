@@ -1,3 +1,5 @@
+const turnConsoleOn = true;
+
 const container = document.querySelector(".viewport");
 const hotspotLabel = document.querySelector(".hotspotLabel");
 let spriteActive = false;
@@ -167,12 +169,12 @@ function onClick(e){
     })
 
     // Open to find an intersection between sphere and raycast
-        /*
-            let intersect = rayCaster.intersectObject(sphere);
-            if (intersect.length > 0){
-                console.log(intersect[0].point);
-            }
-        */
+    if (turnConsoleOn){
+        let intersect = rayCaster.intersectObject(sphere);
+        if (intersect.length > 0){
+            console.log(intersect[0].point);
+        }
+    }
 }
 
 function onMouseMove(e){
