@@ -102,7 +102,6 @@ class Scene {
             });
         })
     }
-
 }
 
 // Create a scene with camera
@@ -125,6 +124,28 @@ s2.addPoint({
 })
 s.createScene(scene);
 s.appear();
+
+function onClick(e){
+    let mouse = new THREE.Vector2(
+        ( e.clientX / window.innerWidth ) * 2 - 1,
+        -1*(( e.clientY / window.innerHeight ) * 2 - 1),
+    );
+    rayCaster.setFromCamera(mouse, camera);
+    let intersectS = rayCaster.intersectObjects(scene.children);
+    intersectS.forEach(function (intersectS) {
+        if (intersectS.object.type === 'Sprite') {
+            intersectS.object.onClick()
+        }
+    })
+
+    // Open to find an intersection between sphere and raycast
+    if (turnConsoleOn){
+        let intersect = rayCaster.intersectObject(s.sphere);
+        if (intersect.length > 0){
+            console.log(intersect[0].point);
+        }
+    }
+}
 
 // Render
 const renderer = new THREE.WebGLRenderer();
@@ -155,28 +176,6 @@ function onResize() {
 
 const rayCaster = new THREE.Raycaster();
 
-function onClick(e){
-    let mouse = new THREE.Vector2(
-        ( e.clientX / window.innerWidth ) * 2 - 1,
-        -1*(( e.clientY / window.innerHeight ) * 2 - 1),
-    );
-    rayCaster.setFromCamera(mouse, camera);
-    let intersectS = rayCaster.intersectObjects(scene.children);
-    intersectS.forEach(function (intersectS) {
-        if (intersectS.object.type === 'Sprite') {
-            intersectS.object.onClick()
-        }
-    })
-
-    // Open to find an intersection between sphere and raycast
-    if (turnConsoleOn){
-        let intersect = rayCaster.intersectObject(sphere);
-        if (intersect.length > 0){
-            console.log(intersect[0].point);
-        }
-    }
-}
-
 function onMouseMove(e){
     let mouse = new THREE.Vector2(
         ( e.clientX / window.innerWidth ) * 2 - 1,
@@ -194,41 +193,13 @@ function onMouseMove(e){
             hotspotLabel.innerHTML = intersectS.object.name;
             spriteActive = intersectS.object;
             foundSprite = true;
-            /*
-            TweenLite.to(intersectS.object.scale, 0.3, {
-                x: hostspotScale * 1.3,
-                y: hostspotScale * 1.3,
-                z: hostspotScale * 1.3
-            })
-            */
         }
     })
     if (foundSprite === false && spriteActive){
         hotspotLabel.classList.remove('is-active');
-        /*
-        TweenLite.to(spriteActive.scale, 0.3, {
-            x: hostspotScale,
-            y: hostspotScale,
-            z: hostspotScale
-        })
-        */
         spriteActive = false;
     }
 }
-
-/*
-addTooltip(new THREE.Vector3(
--49,
-0,
--0
-), 'Calçada');
-
-addTooltip(new THREE.Vector3(
--41,
--12,
--24
-), 'Ponte');
-*/
 
 window.addEventListener('resize', onResize);
 container.addEventListener('click', onClick);
