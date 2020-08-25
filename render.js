@@ -16,7 +16,12 @@ function onClick(e){
   if (turnConsoleOn){
       let intersect = rayCaster.intersectObject(s0.sphere);
       if (intersect.length > 0){
-          console.log(intersect[0].point);
+          let debug = document.querySelector(".debug");
+          debug.innerHTML = intersect[0].point.x.toPrecision(4)
+           + ", "
+           + intersect[0].point.y.toPrecision(4)
+           + ", "
+           + intersect[0].point.z.toPrecision(4);
       }
   }
 }

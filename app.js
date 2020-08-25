@@ -27,7 +27,7 @@ class Scene {
         const geometry = new THREE.SphereGeometry( 50, 32, 32 );
         this.sphere = new THREE.Mesh( geometry, material );
         this.scene.add( this.sphere );
-        this.points.forEach(this.addTooltip.bind(this))
+        this.points.forEach(this.addTooltip.bind(this));
     }
 
     addPoint (point) {
