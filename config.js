@@ -1,17 +1,51 @@
 const turnConsoleOn = true;
 
 // Create a Scene instance
-let s0 = new Scene('./assets/scenes/0.jpg', camera);
-let s1 = new Scene('./assets/scenes/1.jpg', camera);
-let s2 = new Scene('./assets/scenes/2.jpg', camera);
-let s3 = new Scene('./assets/scenes/3.jpg', camera);
-let s4 = new Scene('./assets/scenes/4.jpg', camera);
-let s5 = new Scene('./assets/scenes/5.jpg', camera);
-let s6 = new Scene('./assets/scenes/6.jpg', camera);
-let s7 = new Scene('./assets/scenes/7.jpg', camera);
-let s8 = new Scene('./assets/scenes/8.jpg', camera);
-let s9 = new Scene('./assets/scenes/9.jpg', camera);
-let s10 = new Scene('./assets/scenes/10.jpg', camera);
+let s0 = new Scene('./assets/scenes/00000.jpg', camera);
+let s1 = new Scene('./assets/scenes/00001.jpg', camera);
+let s2 = new Scene('./assets/scenes/00002.jpg', camera);
+let s3 = new Scene('./assets/scenes/00003.jpg', camera);
+let s4 = new Scene('./assets/scenes/00004.jpg', camera);
+let s5 = new Scene('./assets/scenes/00005.jpg', camera);
+let s6 = new Scene('./assets/scenes/00006.jpg', camera);
+let s7 = new Scene('./assets/scenes/00007.jpg', camera);
+let s8 = new Scene('./assets/scenes/00008.jpg', camera);
+let s9 = new Scene('./assets/scenes/00009.jpg', camera);
+let s10 = new Scene('./assets/scenes/00010.jpg', camera);
+let s11 = new Scene('./assets/scenes/00011.jpg', camera);
+let s12 = new Scene('./assets/scenes/00012.jpg', camera);
+let s13 = new Scene('./assets/scenes/00013.jpg', camera);
+let s14 = new Scene('./assets/scenes/00014.jpg', camera);
+let s15 = new Scene('./assets/scenes/00015.jpg', camera);
+let s16 = new Scene('./assets/scenes/00016.jpg', camera);
+let s17 = new Scene('./assets/scenes/00017.jpg', camera);
+let s18 = new Scene('./assets/scenes/00018.jpg', camera);
+let s19 = new Scene('./assets/scenes/00019.jpg', camera);
+let s20 = new Scene('./assets/scenes/00020.jpg', camera);
+let s21 = new Scene('./assets/scenes/00021.jpg', camera);
+let s22 = new Scene('./assets/scenes/00022.jpg', camera);
+let s23 = new Scene('./assets/scenes/00023.jpg', camera);
+let s24 = new Scene('./assets/scenes/00024.jpg', camera);
+let s25 = new Scene('./assets/scenes/00025.jpg', camera);
+let s26 = new Scene('./assets/scenes/00026.jpg', camera);
+let s27 = new Scene('./assets/scenes/00027.jpg', camera);
+let s28 = new Scene('./assets/scenes/00028.jpg', camera);
+let s29 = new Scene('./assets/scenes/00029.jpg', camera);
+let s30 = new Scene('./assets/scenes/00030.jpg', camera);
+let s31 = new Scene('./assets/scenes/00031.jpg', camera);
+let s32 = new Scene('./assets/scenes/00032.jpg', camera);
+let s33 = new Scene('./assets/scenes/00033.jpg', camera);
+let s34 = new Scene('./assets/scenes/00034.jpg', camera);
+let s35 = new Scene('./assets/scenes/00035.jpg', camera);
+let s36 = new Scene('./assets/scenes/00036.jpg', camera);
+let s37 = new Scene('./assets/scenes/00037.jpg', camera);
+let s38 = new Scene('./assets/scenes/00038.jpg', camera);
+let s39 = new Scene('./assets/scenes/00039.jpg', camera);
+let s40 = new Scene('./assets/scenes/00040.jpg', camera);
+let s41 = new Scene('./assets/scenes/00041.jpg', camera);
+let s42 = new Scene('./assets/scenes/00042.jpg', camera);
+let s43 = new Scene('./assets/scenes/00043.jpg', camera);
+let s44 = new Scene('./assets/scenes/00044.jpg', camera);
 
 // 0
 s0.addPoint({
