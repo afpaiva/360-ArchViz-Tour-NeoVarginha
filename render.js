@@ -1,31 +1,3 @@
-
-function onClick(e){
-  let mouse = new THREE.Vector2(
-      ( e.clientX / window.innerWidth ) * 2 - 1,
-      -1*(( e.clientY / window.innerHeight ) * 2 - 1),
-  );
-  rayCaster.setFromCamera(mouse, camera);
-  let intersectS = rayCaster.intersectObjects(scene.children);
-  intersectS.forEach(function (intersectS) {
-      if (intersectS.object.type === 'Sprite') {
-          intersectS.object.onClick()
-      }
-  })
-
-  // Open to find an intersection between sphere and raycast
-  if (turnConsoleOn){
-      let intersect = rayCaster.intersectObject(s0.sphere);
-      if (intersect.length > 0){
-          let debug = document.querySelector(".debug");
-          debug.innerHTML = intersect[0].point.x.toPrecision(4)
-           + ", "
-           + intersect[0].point.y.toPrecision(4)
-           + ", "
-           + intersect[0].point.z.toPrecision(4);
-      }
-  }
-}
-
 // Render
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -38,6 +10,48 @@ controls.enableZoom = false;
 controls.autoRotate = true;
 camera.position.set(1, 0 , 0);
 controls.update();
+
+function onClick(e){
+  let mouse = new THREE.Vector2(
+      ( e.clientX / window.innerWidth ) * 2 - 1,
+      -1*(( e.clientY / window.innerHeight ) * 2 - 1),
+  );
+  rayCaster.setFromCamera(mouse, camera);
+  let intersectS = rayCaster.intersectObjects(scene.children);
+  intersectS.forEach(function (intersectS) {
+      if (intersectS.object.type === 'Sprite') {
+          intersectS.object.onClick();
+      }
+  })
+
+  // Open to find an intersection between sphere and raycast
+  if (turnConsoleOn){
+      let intersect = rayCaster.intersectObject(s0.sphere);
+      if (intersect.length > 0){
+          debug.innerHTML = intersect[0].point.x.toPrecision(4)
+           + ", "
+           + intersect[0].point.y.toPrecision(4)
+           + ", "
+           + intersect[0].point.z.toPrecision(4);
+      }
+  }
+}
+
+function onTouchEnd(e){
+    e.preventDefault();
+
+    let mouse = new THREE.Vector2(
+        ( e.changedTouches[0].clientX / window.innerWidth ) * 2 - 1,
+        -1*(( e.changedTouches[0].clientY / window.innerHeight ) * 2 - 1),
+    );
+    rayCaster.setFromCamera(mouse, camera);
+    let intersectS = rayCaster.intersectObjects(scene.children);
+    intersectS.forEach(function (intersectS) {
+        if (intersectS.object.type === 'Sprite') {
+            intersectS.object.onClick();
+        }
+    })
+  }
 
 // Animate Frames
 function animate() {
@@ -80,6 +94,21 @@ function onMouseMove(e){
   }
 }
 
+//fullscreen
+function openFullscreen() {
+  if (document.body.requestFullscreen) {
+    document.body.requestFullscreen();
+  } else if (document.body.mozRequestFullScreen) { /* Firefox */
+    document.body.mozRequestFullScreen();
+  } else if (document.body.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    document.body.webkitRequestFullscreen();
+  } else if (document.body.msRequestFullscreen) { /* IE/Edge */
+    document.body.msRequestFullscreen();
+  }
+}
+
 window.addEventListener('resize', onResize);
 container.addEventListener('click', onClick);
+container.addEventListener('touchend', onTouchEnd);
+sceneInput.addEventListener('change', sceneJump);
 container.addEventListener('mousemove', onMouseMove);

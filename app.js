@@ -1,7 +1,9 @@
 const container = document.querySelector(".viewport");
+const debug = document.querySelector(".debug");
+const sceneInput = document.querySelector("#sceneInput");
 const hotspotLabel = document.querySelector(".hotspotLabel");
 let spriteActive = false;
-const hostspotScale = 2.5;
+const hostspotScale = 1.5;
 
 class Scene {
 
@@ -36,7 +38,7 @@ class Scene {
 
     addTooltip (point) {
 
-        let spriteMap = new THREE.TextureLoader().load( "./assets/hotspot.png" );
+        let spriteMap = new THREE.TextureLoader().load( "./assets/hotspot.jpg" );
         let spriteMaterial = new THREE.SpriteMaterial( {
             map: spriteMap
         } );
