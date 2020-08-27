@@ -103,7 +103,7 @@ s2.addPoint({
   scene: s4
 });
 //
-// 2
+// 3
 s3.addPoint({
   position: new THREE.Vector3( 46, -7, 17 ),
   name: 'corredor',
@@ -282,24 +282,370 @@ s13.addPoint({
 //
 // 14
 s14.addPoint({
-  position: new THREE.Vector3( 14.64, -5.516, -47.21 ),
-  name: 'estar',
+  position: new THREE.Vector3( -46.27, -6.096, 17.46 ),
+  name: 'hall',
+  scene: s13
+});
+s14.addPoint({
+  position: new THREE.Vector3( 12.75, -5.154, -47.84 ),
+  name: 'cozinha',
   scene: s15
 });
 s14.addPoint({
-  position: new THREE.Vector3( 47.43, -8.344, 12.49 ),
+  position: new THREE.Vector3( 46.97, -3.541, 15.96 ),
   name: 'estar',
   scene: s21
 });
 s14.addPoint({
-  position: new THREE.Vector3( 40.92, -6.022, 27.94 ),
+  position: new THREE.Vector3( 39.39, -3.730, 30.15 ),
   name: 'quarto',
   scene: s18
 });
 s14.addPoint({
-  position: new THREE.Vector3( 28.46, -3.974, 40.77 ),
+  position: new THREE.Vector3( 28.05, -5.539, 40.91 ),
   name: 'suíte',
   scene: s19
+});
+s14.addPoint({
+  position: new THREE.Vector3( 35.11, -6.219, -34.97 ),
+  name: 'varanda',
+  scene: s17
+});
+//
+// 15
+s15.addPoint({
+  position: new THREE.Vector3( -11.91, -5.019, 48.12 ),
+  name: 'estar',
+  scene: s14
+});
+s15.addPoint({
+  position: new THREE.Vector3( 49.59, -0.8811, -3.725 ),
+  name: 'varanda',
+  scene: s17
+});
+s15.addPoint({
+  position: new THREE.Vector3( 22.71, -4.476, -44.03 ),
+  name: 'cozinha',
+  scene: s16
+});
+s15.addPoint({
+  position: new THREE.Vector3( 8.379, -3.192, 49.02 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 16
+s16.addPoint({
+  position: new THREE.Vector3( 25.34, -1.852, 42.77 ),
+  name: 'varanda',
+  scene: s17
+});
+s16.addPoint({
+  position: new THREE.Vector3( -20.93, -3.886, 45.02 ),
+  name: 'estar',
+  scene: s15
+});
+s16.addPoint({
+  position: new THREE.Vector3( 0.3472, -1.495, 49.89 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 17
+s17.addPoint({
+  position: new THREE.Vector3( -37.69, -4.576, -32.16 ),
+  name: 'cozinha',
+  scene: s16
+});
+s17.addPoint({
+  position: new THREE.Vector3( -49.03, -3.342, 8.135 ),
+  name: 'estar',
+  scene: s15
+});
+s17.addPoint({
+  position: new THREE.Vector3( -30.31, -3.151, 39.30 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 18
+s18.addPoint({
+  position: new THREE.Vector3( -41.42, -2.979, 27.73 ),
+  name: 'suíte',
+  scene: s19
+});
+s18.addPoint({
+  position: new THREE.Vector3( -48.88, -3.425, 9.686 ),
+  name: 'banho',
+  scene: s20
+});
+s18.addPoint({
+  position: new THREE.Vector3( -49.51, -2.909, -3.483 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 19
+s19.addPoint({
+  position: new THREE.Vector3( -34.78, -2.579, 35.66 ),
+  name: 'banho',
+  scene: s22
+});
+s19.addPoint({
+  position: new THREE.Vector3( -33.83, -3.289, -36.40 ),
+  name: 'banho',
+  scene: s20
+});
+s19.addPoint({
+  position: new THREE.Vector3( -14.16, -3.809, -47.51 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 20
+s20.addPoint({
+  position: new THREE.Vector3( 49.41, -1.787, -5.134 ),
+  name: 'quarto',
+  scene: s18
+});
+s20.addPoint({
+  position: new THREE.Vector3( 47.14, -3.540, 15.43 ),
+  name: 'quarto',
+  scene: s19
+});
+s20.addPoint({
+  position: new THREE.Vector3( 39.98, -3.535, -29.45 ),
+  name: 'estar',
+  scene: s21
+});
+//
+// 21
+s21.addPoint({
+  position: new THREE.Vector3( -49.60, -0.9308, 3.603 ),
+  name: 'estar',
+  scene: s14
+});
+s21.addPoint({
+  position: new THREE.Vector3( -21.96, -5.645, 44.29 ),
+  name: 'banho',
+  scene: s20
+});
+s21.addPoint({
+  position: new THREE.Vector3( 32.04, -4.198, 37.81 ),
+  name: 'quarto',
+  scene: s18
+});
+s21.addPoint({
+  position: new THREE.Vector3( 1.970, -3.690, 49.62 ),
+  name: 'suíte',
+  scene: s19
+});
+s21.addPoint({
+  position: new THREE.Vector3( -9.473, -4.132, -48.86 ),
+  name: 'estar',
+  scene: s15
+});
+//
+// 22
+s22.addPoint({
+  position: new THREE.Vector3( 47.73, -1.810, -13.76 ),
+  name: 'suíte',
+  scene: s19
+});
+//
+// 23
+s23.addPoint({
+  position: new THREE.Vector3( 12.52, -2.412, 48.08 ),
+  name: 'cozinha',
+  scene: s26
+});
+s23.addPoint({
+  position: new THREE.Vector3( 49.21, -4.485, 5.810 ),
+  name: 'estar',
+  scene: s24
+});
+s23.addPoint({
+  position: new THREE.Vector3( -10.00, -2.033, -48.86 ),
+  name: 'hall',
+  scene: s12
+});
+//
+// 24
+s24.addPoint({
+  position: new THREE.Vector3( -13.83, -3.885, 47.60 ),
+  name: 'cozinha',
+  scene: s26
+});
+s24.addPoint({
+  position: new THREE.Vector3( 15.53, -1.759, 47.20 ),
+  name: 'estar',
+  scene: s26
+});
+s24.addPoint({
+  position: new THREE.Vector3( -49.25, -1.208, -7.019 ),
+  name: 'hall',
+  scene: s23
+});
+//
+// 25
+s25.addPoint({
+  position: new THREE.Vector3( -3.454, -0.5842, -49.63 ),
+  name: 'estar',
+  scene: s24
+});
+s25.addPoint({
+  position: new THREE.Vector3( -46.77, -2.341, -16.85 ),
+  name: 'cozinha',
+  scene: s26
+});
+s25.addPoint({
+  position: new THREE.Vector3( 10.24, -0.8396, 48.85 ),
+  name: 'varanda',
+  scene: s27
+});
+s25.addPoint({
+  position: new THREE.Vector3( 47.60, -1.312, -14.27 ),
+  name: 'banho',
+  scene: s28
+});
+s25.addPoint({
+  position: new THREE.Vector3( 46.41, -2.522, 18.01 ),
+  name: 'quarto',
+  scene: s29
+});
+s25.addPoint({
+  position: new THREE.Vector3( 49.79, -2.291, 1.031 ),
+  name: 'suite',
+  scene: s30
+});
+//
+// 26
+s26.addPoint({
+  position: new THREE.Vector3( -2.885, -3.529, -49.54 ),
+  name: 'hall',
+  scene: s23
+});
+s26.addPoint({
+  position: new THREE.Vector3( 28.68, -3.189, -40.63 ),
+  name: 'estar',
+  scene: s24
+});
+s26.addPoint({
+  position: new THREE.Vector3( 48.56, -3.431, 10.75 ),
+  name: 'estar',
+  scene: s25
+});
+s26.addPoint({
+  position: new THREE.Vector3( 30.50, -2.192, 39.20 ),
+  name: 'varanda',
+  scene: s27
+});
+//
+// 27
+s27.addPoint({
+  position: new THREE.Vector3( 0.4774, -2.282, -49.84 ),
+  name: 'estar',
+  scene: s25
+});
+s27.addPoint({
+  position: new THREE.Vector3( -18.55, -3.793, -46.18 ),
+  name: 'cozinha',
+  scene: s26
+});
+s27.addPoint({
+  position: new THREE.Vector3( 26.86, -3.361, -41.88 ),
+  name: 'banho',
+  scene: s28
+});
+//
+// 28
+s28.addPoint({
+  position: new THREE.Vector3( -42.19, -3.923, 26.22 ),
+  name: 'estar',
+  scene: s25
+});
+s28.addPoint({
+  position: new THREE.Vector3( -27.46, -0.5602, 41.71 ),
+  name: 'varanda',
+  scene: s27
+});
+s28.addPoint({
+  position: new THREE.Vector3( 3.749, -5.378, 49.32 ),
+  name: 'quarto',
+  scene: s29
+});
+s28.addPoint({
+  position: new THREE.Vector3( 41.50, -3.349, 27.56 ),
+  name: 'suíte',
+  scene: s30
+});
+//
+// 29
+s29.addPoint({
+  position: new THREE.Vector3( 2.645, -1.795, -49.65 ),
+  name: 'banho',
+  scene: s28
+});
+s29.addPoint({
+  position: new THREE.Vector3( 43.64, -3.872, -23.51 ),
+  name: 'suíte',
+  scene: s30
+});
+s29.addPoint({
+  position: new THREE.Vector3( -34.19, -2.241, -36.17 ),
+  name: 'estar',
+  scene: s25
+});
+//
+// 30
+s30.addPoint({
+  position: new THREE.Vector3( 49.49, -3.195, -3.624 ),
+  name: 'suíte',
+  scene: s31
+});
+s30.addPoint({
+  position: new THREE.Vector3( 46.03, -5.864, 18.35 ),
+  name: 'banho',
+  scene: s32
+});
+s30.addPoint({
+  position: new THREE.Vector3( -47.52, -4.778, 13.95 ),
+  name: 'quarto',
+  scene: s29
+});
+s30.addPoint({
+  position: new THREE.Vector3( -46.64, -5.926, -16.31 ),
+  name: 'banho',
+  scene: s28
+});
+s30.addPoint({
+  position: new THREE.Vector3( -49.82, -2.842, -0.4370 ),
+  name: 'estar',
+  scene: s25
+});
+//
+// 31
+s31.addPoint({
+  position: new THREE.Vector3( -42.50, -3.665, 25.67 ),
+  name: 'banho',
+  scene: s32
+});
+s31.addPoint({
+  position: new THREE.Vector3( -49.75, -4.165, -0.4896 ),
+  name: 'suíte',
+  scene: s30
+});
+//
+// 32
+s32.addPoint({
+  position: new THREE.Vector3( -24.87, -2.052, -43.01 ),
+  name: 'estar',
+  scene: s30
+});
+s32.addPoint({
+  position: new THREE.Vector3( 34.78, 1.979, -35.71 ),
+  name: 'suíte',
+  scene: s31
 });
 //
 
@@ -336,3 +682,4 @@ function sceneJump(){
   }
   document.getElementById("sceneInput").value = '';
 }
+
