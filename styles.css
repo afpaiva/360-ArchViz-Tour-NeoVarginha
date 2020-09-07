@@ -34,18 +34,6 @@ html, body{
     border-radius: 10px 10px 10px 0px;
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
-    top: 20px;
-    left: 20px;
-    font-size: large;
-    background-color: black;
-    color: green;
-}
-
-.input{
-    padding: 10px;
-    border-radius: 0px 10px 10px 10px;
-    font-family: 'Courier New', Courier, monospace;
-    position: fixed;
     top: 50px;
     left: 20px;
     font-size: large;
@@ -53,7 +41,17 @@ html, body{
     color: green;
 }
 
-img{
-    width: 15px;
-    padding: 10px;
+.menu{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+}
+
+#fullscreenIcon{
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/fullscreen.png');
+    background-size: auto;
+    cursor: pointer;
 }

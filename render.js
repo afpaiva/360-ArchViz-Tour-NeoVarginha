@@ -95,20 +95,30 @@ function onMouseMove(e){
 }
 
 //fullscreen
+
 function openFullscreen() {
-  if (document.body.requestFullscreen) {
-    document.body.requestFullscreen();
-  } else if (document.body.mozRequestFullScreen) { /* Firefox */
-    document.body.mozRequestFullScreen();
-  } else if (document.body.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    document.body.webkitRequestFullscreen();
-  } else if (document.body.msRequestFullscreen) { /* IE/Edge */
-    document.body.msRequestFullscreen();
-  }
+
+    if (document.body.requestFullscreen) {
+      document.body.requestFullscreen();
+    } else if (document.body.mozRequestFullScreen) { /* Firefox */
+      document.body.mozRequestFullScreen();
+    } else if (document.body.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      document.body.webkitRequestFullscreen();
+    } else if (document.body.msRequestFullscreen) { /* IE/Edge */
+      document.body.msRequestFullscreen();
+    }
+    if (document.mozCancelFullScreen) { /* Firefox */
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+      document.msExitFullscreen();
+    }
 }
+
 
 window.addEventListener('resize', onResize);
 container.addEventListener('click', onClick);
 container.addEventListener('touchend', onTouchEnd);
-sceneInput.addEventListener('change', sceneJump);
+if (turnConsoleOn) sceneInput.addEventListener('change', sceneJump);
 container.addEventListener('mousemove', onMouseMove);
