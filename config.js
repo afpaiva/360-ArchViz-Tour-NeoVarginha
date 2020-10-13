@@ -1,4 +1,4 @@
-const turnConsoleOn = false;
+const turnConsoleOn = true;
 
 // Create a Scene instance
 let s0 = new Scene('./assets/scenes/00000.jpg', camera);
@@ -876,8 +876,18 @@ s44.addPoint({
   name: 'hall',
   scene: s12
 });
-//
+// fim apartamentos
 
+// area de lazer
+
+
+
+// fim area lazer
+
+
+
+
+// To create a link to a scene
 const queryString = window.location.search;
 if (queryString === "?apt1"){
   s0.createScene(scene);
@@ -909,7 +919,7 @@ function sceneJump(){
     s40, s41, s42, s43, s44
   ];
   
-  for (let i=0; i<45; i++){
+  for (let i=0; i<arrScenes.length; i++){
 
     arrScenes[i].sprites.forEach((sprite)=>{
       TweenLite.to(sprite.scale, 1, {

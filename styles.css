@@ -29,18 +29,6 @@ html, body{
     transform: translate3D (-50%, calc(-100% - 40px), 0);
 }
 
-.debug{
-    padding: 10px;
-    border-radius: 10px 10px 10px 0px;
-    font-family: 'Courier New', Courier, monospace;
-    position: fixed;
-    top: 50px;
-    left: 20px;
-    font-size: large;
-    background-color: black;
-    color: green;
-}
-
 .menu{
     position: fixed;
     top: 20px;
@@ -51,7 +39,24 @@ html, body{
 #fullscreenIcon{
     width: 30px;
     height: 30px;
-    background-image: url('./assets/fullscreen.png');
-    background-size: auto;
     cursor: pointer;
+}
+
+.debug{
+    padding: 10px;
+    border-radius: 10px 10px 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    font-size: large;
+    background-color: black;
+    color: green;
+}
+
+.menu-debug{
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    position: fixed;
 }
