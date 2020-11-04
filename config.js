@@ -1,4 +1,4 @@
-const turnConsoleOn = true;
+const turnConsoleOn = false;
 
 // Create a Scene instance
 let s0 = new Scene('./assets/scenes/00000.jpg', camera);
@@ -46,6 +46,26 @@ let s41 = new Scene('./assets/scenes/00041.jpg', camera);
 let s42 = new Scene('./assets/scenes/00042.jpg', camera);
 let s43 = new Scene('./assets/scenes/00043.jpg', camera);
 let s44 = new Scene('./assets/scenes/00044.jpg', camera);
+// apartamentos acima
+// lazer
+let s45 = new Scene('./assets/scenes/00045.jpg', camera);
+let s46 = new Scene('./assets/scenes/00046.jpg', camera);
+let s47 = new Scene('./assets/scenes/00047.jpg', camera);
+let s48 = new Scene('./assets/scenes/00048.jpg', camera);
+let s49 = new Scene('./assets/scenes/00049.jpg', camera);
+let s50 = new Scene('./assets/scenes/00050.jpg', camera);
+let s51 = new Scene('./assets/scenes/00051.jpg', camera);
+let s52 = new Scene('./assets/scenes/00052.jpg', camera);
+let s53 = new Scene('./assets/scenes/00053.jpg', camera);
+let s54 = new Scene('./assets/scenes/00054.jpg', camera);
+let s55 = new Scene('./assets/scenes/00055.jpg', camera);
+let s56 = new Scene('./assets/scenes/00056.jpg', camera);
+let s57 = new Scene('./assets/scenes/00057.jpg', camera);
+let s58 = new Scene('./assets/scenes/00058.jpg', camera);
+let s59 = new Scene('./assets/scenes/00059.jpg', camera);
+let s60 = new Scene('./assets/scenes/00060.jpg', camera);
+let s61 = new Scene('./assets/scenes/00061.jpg', camera);
+// fim lazer
 
 // 0
 s0.addPoint({
@@ -865,7 +885,7 @@ s43.addPoint({
   scene: s42
 });
 //
-// 44
+// 44 - ELEVADOR
 s44.addPoint({
   position: new THREE.Vector3( -46.56, -2.615, -17.50),
   name: 'hall',
@@ -879,9 +899,314 @@ s44.addPoint({
 // fim apartamentos
 
 // area de lazer
-
-
-
+// 45
+s45.addPoint({
+  position: new THREE.Vector3( -0.3318, 0.5150, 49.94),
+  name: 'hall',
+  scene: s46
+});
+s45.addPoint({
+  position: new THREE.Vector3( 9.209, 0.6380, -49.06),
+  name: 'piscina',
+  scene: s54
+});
+s45.addPoint({
+  position: new THREE.Vector3( -49.68, -3.207, -1.646),
+  name: 'praça',
+  scene: s51
+});
+s45.addPoint({
+  position: new THREE.Vector3( 49.70, -1.690, 2.253),
+  name: 'elevador',
+  scene: s44
+});
+// 46
+s46.addPoint({
+  position: new THREE.Vector3( 0.7778, 0.08921, -49.92),
+  name: 'hall',
+  scene: s45
+});
+s46.addPoint({
+  position: new THREE.Vector3( 19.75, 1.309, 45.79),
+  name: 'espaço teen',
+  scene: s61
+});
+s46.addPoint({
+  position: new THREE.Vector3( -16.12, 0.08106, 47.10),
+  name: 'praça',
+  scene: s47
+});
+s46.addPoint({
+  position: new THREE.Vector3( -49.74, -1.327, -1.942),
+  name: 'praça',
+  scene: s50
+});
+s46.addPoint({ //elevador
+  position: new THREE.Vector3( 49.71, -3.430, 1.276),
+  name: 'elevador',
+  scene: s44
+});
+// 47
+s47.addPoint({
+  position: new THREE.Vector3( 31.80, -1.654, -38.17),
+  name: 'hall',
+  scene: s46
+});
+s47.addPoint({
+  position: new THREE.Vector3( -26.32, 0.6246, 42.32),
+  name: 'academia',
+  scene: s48
+});
+s47.addPoint({
+  position: new THREE.Vector3( 47.18, -0.9354, 15.74),
+  name: 'espaço teen',
+  scene: s61
+});
+s47.addPoint({
+  position: new THREE.Vector3( 49.70, 0.1251, -2.943),
+  name: 'espaço gourmet',
+  scene: s57
+});
+s47.addPoint({
+  position: new THREE.Vector3( -44.45, -1.703, -22.23),
+  name: 'praça',
+  scene: s50
+});
+// 48
+s48.addPoint({
+  position: new THREE.Vector3( 8.100, -1.990, -49.10),
+  name: 'praça',
+  scene: s47
+});
+s48.addPoint({
+  position: new THREE.Vector3( -11.69, -6.282, -47.99),
+  name: 'praça',
+  scene: s50
+});
+s48.addPoint({
+  position: new THREE.Vector3( -8.873, -0.6907, 49.09),
+  name: 'academia',
+  scene: s49
+});
+// 49
+s49.addPoint({
+  position: new THREE.Vector3( 27.44, -0.1830, -41.74),
+  name: 'academia',
+  scene: s48
+});
+s49.addPoint({
+  position: new THREE.Vector3( 10.40, -0.4101, -48.82),
+  name: 'praça',
+  scene: s50
+});
+// 50
+s50.addPoint({
+  position: new THREE.Vector3( 14.55, -1.982, 47.48),
+  name: 'academia',
+  scene: s48
+});
+s50.addPoint({
+  position: new THREE.Vector3( 41.11, 2.444, 28.15),
+  name: 'praça',
+  scene: s47
+});
+s50.addPoint({
+  position: new THREE.Vector3( 39.14, -2.670, -30.53),
+  name: 'hall',
+  scene: s46
+});
+s50.addPoint({
+  position: new THREE.Vector3( 0.7132, -0.1517, -49.92),
+  name: 'praça',
+  scene: s51
+});
+// 51
+s51.addPoint({
+  position: new THREE.Vector3( 38.07, 1.560, -31.93),
+  name: 'hall',
+  scene: s45
+});
+s51.addPoint({
+  position: new THREE.Vector3( 1.544, -0.3418, 49.83),
+  name: 'praça',
+  scene: s50
+});
+s51.addPoint({
+  position: new THREE.Vector3( 5.295, -1.071, -49.43),
+  name: 'piscina',
+  scene: s52
+});
+// 52
+s52.addPoint({
+  position: new THREE.Vector3( 37.16, -1.562, -33.04),
+  name: 'piscina',
+  scene: s53
+});
+s52.addPoint({
+  position: new THREE.Vector3( 49.72, -1.166, -2.236),
+  name: 'piscina',
+  scene: s54
+});
+s52.addPoint({
+  position: new THREE.Vector3( 1.721, -1.035, 49.78),
+  name: 'praça',
+  scene: s51
+});
+// 53
+s53.addPoint({
+  position: new THREE.Vector3( 49.91, -0.9210, -0.4735),
+  name: 'piscina',
+  scene: s55
+});
+s53.addPoint({
+  position: new THREE.Vector3( 14.03, -0.2580, 47.73),
+  name: 'hall',
+  scene: s45
+});
+s53.addPoint({
+  position: new THREE.Vector3( -26.72, 3.773, 41.93),
+  name: 'piscina',
+  scene: s52
+});
+// 54
+s54.addPoint({
+  position: new THREE.Vector3( 45.59, -0.5375, -20.21),
+  name: 'piscina',
+  scene: s55
+});
+s54.addPoint({
+  position: new THREE.Vector3( 43.60, 0.01979, 23.98),
+  name: 'espaço gourmet',
+  scene: s56
+});
+s54.addPoint({
+  position: new THREE.Vector3( -21.12, 1.493, 45.05),
+  name: 'hall',
+  scene: s45
+});
+s54.addPoint({
+  position: new THREE.Vector3( -49.73, -0.9753, 2.222),
+  name: 'piscina',
+  scene: s52
+});
+// 55
+s55.addPoint({
+  position: new THREE.Vector3( -49.55, -0.4552, 4.379),
+  name: 'piscina',
+  scene: s54
+});
+s55.addPoint({
+  position: new THREE.Vector3( -47.55, -0.4369, 14.59),
+  name: 'piscina',
+  scene: s52
+});
+s55.addPoint({
+  position: new THREE.Vector3( 10.38, 1.872, 48.75),
+  name: 'espaço gourmet',
+  scene: s56
+});
+// 56
+s56.addPoint({
+  position: new THREE.Vector3( 0.9177, 0.5258, 49.88),
+  name: 'espaço gourmet',
+  scene: s57
+});
+s56.addPoint({
+  position: new THREE.Vector3( -5.428, -0.6274, -49.43),
+  name: 'piscina',
+  scene: s55
+});
+// 57
+s57.addPoint({
+  position: new THREE.Vector3( -0.7086, -0.5043, -49.91),
+  name: 'espaço gourmet',
+  scene: s56
+});
+s57.addPoint({
+  position: new THREE.Vector3( 27.14, -0.7731, 41.87),
+  name: 'espaço kids',
+  scene: s58
+});
+s57.addPoint({
+  position: new THREE.Vector3( -49.42, -0.8211, 5.513),
+  name: 'praça',
+  scene: s47
+});
+s57.addPoint({
+  position: new THREE.Vector3( -36.13, 0.1655, 34.39),
+  name: 'espaço teen',
+  scene: s61
+});
+// 58
+s58.addPoint({
+  position: new THREE.Vector3( -14.19, -0.8499, -47.65),
+  name: 'espaço gourmet',
+  scene: s57
+});
+s58.addPoint({
+  position: new THREE.Vector3( -30.90, 0.1369, 39.01),
+  name: 'espaço teen',
+  scene: s59
+});
+// 59
+s59.addPoint({
+  position: new THREE.Vector3( 32.36, -1.139, -37.74),
+  name: 'espaço kids',
+  scene: s58
+});
+s59.addPoint({
+  position: new THREE.Vector3( -44.24, -1.163, 22.67),
+  name: 'espaço teen',
+  scene: s60
+});
+s59.addPoint({
+  position: new THREE.Vector3( -33.63, 0.9866, -36.71),
+  name: 'espaço teen',
+  scene: s61
+});
+// 60
+s60.addPoint({
+  position: new THREE.Vector3( -2.048, 1.982, -49.70),
+  name: 'espaço teen',
+  scene: s61
+});
+s60.addPoint({
+  position: new THREE.Vector3( 46.45, 0.9340, -18.14),
+  name: 'espaço teen',
+  scene: s59
+});
+// 61
+s61.addPoint({
+  position: new THREE.Vector3( 43.71, -0.2203, -23.76),
+  name: 'espaço gourmet',
+  scene: s57
+});
+s61.addPoint({
+  position: new THREE.Vector3( 49.91, -0.8556, 0.4747),
+  name: 'espaço kids',
+  scene: s58
+});
+s61.addPoint({
+  position: new THREE.Vector3( 43.12, 0.04115, 24.89),
+  name: 'espaço teen',
+  scene: s59
+});
+s61.addPoint({
+  position: new THREE.Vector3( 14.63, -1.784, 47.47),
+  name: 'espaço teen',
+  scene: s60
+});
+s61.addPoint({
+  position: new THREE.Vector3( -29.85, 0.6694, -39.83),
+  name: 'praça',
+  scene: s47
+});
+s61.addPoint({
+  position: new THREE.Vector3( -2.103, 0.2922, -49.78),
+  name: 'hall',
+  scene: s46
+});
+//
 // fim area lazer
 
 
@@ -904,6 +1229,10 @@ else if (queryString === "?apt3"){
 else if (queryString === "?apt4"){
   s23.createScene(scene);
   s23.appear();
+}
+else if (queryString === "?lazer"){
+  s45.createScene(scene);
+  s45.appear();
 }else{
   s0.createScene(scene);
   s0.appear();
@@ -916,7 +1245,9 @@ function sceneJump(){
     s10, s11, s12, s13, s14, s15, s16, s17, s18, s19,
     s20, s21, s22, s23, s24, s25, s26, s27, s28, s29,
     s30, s31, s32, s33, s34, s35, s36, s37, s38, s39,
-    s40, s41, s42, s43, s44
+    s40, s41, s42, s43, s44, s45, s46, s47, s48, s49,
+    s50, s51, s52, s53, s54, s55, s56, s57, s58, s59,
+    s60, s61
   ];
   
   for (let i=0; i<arrScenes.length; i++){
