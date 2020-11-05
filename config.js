@@ -1,4 +1,4 @@
-const turnConsoleOn = false;
+//const turnConsoleOn = true;
 
 // Create a Scene instance
 let s0 = new Scene('./assets/scenes/00000.jpg', camera);
@@ -176,14 +176,9 @@ s5.addPoint({
 //
 // 6
 s6.addPoint({
-  position: new THREE.Vector3( 10.53, -0.4127, -48.78 ),
+  position: new THREE.Vector3( -1.998, -1.939, -49.71 ),
   name: 'suíte',
   scene: s7
-});
-s6.addPoint({
-  position: new THREE.Vector3( 10.53, -0.4127, -48.78 ),
-  name: 'banho',
-  scene: s10
 });
 //
 // 7
