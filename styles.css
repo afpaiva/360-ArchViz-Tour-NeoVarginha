@@ -11,6 +11,10 @@ a{
     color: inherit;
 }
 
+img{
+    margin-left: 8px;
+}
+
 .viewport{
     width: 100vh;
     height: 100vh;
@@ -83,8 +87,8 @@ a{
         z-index: 10;
         top: 100px;
         position: fixed;
-        width: 60px;
-        height: 30px;
+        width: 80px;
+        height: 80px;
         cursor: pointer;
     }
 }
@@ -93,8 +97,8 @@ a{
     #fullscreenIcon{
         z-index: 10;
         position: fixed;
-        width: 60px;
-        height: 30px;
+        width: 80px;
+        height: 80px;
         cursor: pointer;
     }
 }
