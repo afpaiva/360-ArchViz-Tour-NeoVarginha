@@ -5,9 +5,21 @@
 		<title>360TourEnsaios3D</title>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000" />
 
 	</head>
 	<body>
+		<div class="shortcuts-container">
+			<div class="shortcuts">
+				<a href="index.html?lobby" class="button">Lobby</a> |
+				<a href="index.html?ap1" class="button">Tipo&nbsp;1</a> |
+				<a href="index.html?ap2" class="button">Tipo&nbsp;2</a> |
+				<a href="index.html?ap3" class="button">Tipo&nbsp;3</a> |
+				<a href="index.html?ap4" class="button">Tipo&nbsp;4</a> |
+				<a href="index.html?lazer" class="button">Área de Lazer</a>
+			</div>
+		</div>
 		<div class="viewport"></div>
 
 		<!--for debugging 	
@@ -15,7 +27,12 @@
 		<div class="menu-debug"><input id="sceneInput" type="number"></div>
 	---->
 
-		<div class="menu"><div id="fullscreenIcon" onclick="openFullscreen()"><img width="30px" height="30px" src="./assets/fullscreen.png"></div></div>
+		<div class="menu">
+			<div id="fullscreenIcon">
+				<img width="30px" height="30px" src="./assets/fullscreen.png" onclick="openFullscreen()">
+				<img width="30px" height="30px" src="./assets/home.png" onclick="openHome()">
+			</div>
+		</div>
 		<div class="hotspotLabel"></div>
 
     <script src="tools/three.js"></script>

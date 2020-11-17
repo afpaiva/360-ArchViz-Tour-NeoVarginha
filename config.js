@@ -1,4 +1,4 @@
-//const turnConsoleOn = true;
+const turnConsoleOn = false;
 
 // Create a Scene instance
 let s0 = new Scene('./assets/scenes/00000.jpg', camera);
@@ -1209,19 +1209,19 @@ s61.addPoint({
 
 // To create a link to a scene
 const queryString = window.location.search;
-if (queryString === "?apt1"){
+if (queryString === "?ap1"){
   s0.createScene(scene);
   s0.appear();
 }
-else if (queryString === "?apt2"){
+else if (queryString === "?ap2"){
   s33.createScene(scene);
   s33.appear();
 }
-else if (queryString === "?apt3"){
+else if (queryString === "?ap3"){
   s14.createScene(scene);
   s14.appear();
 }
-else if (queryString === "?apt4"){
+else if (queryString === "?ap4"){
   s23.createScene(scene);
   s23.appear();
 }
@@ -1229,8 +1229,7 @@ else if (queryString === "?lazer"){
   s45.createScene(scene);
   s45.appear();
 }else{
-  s0.createScene(scene);
-  s0.appear();
+  window.location.href = "fac.html";
 }
 
 function sceneJump(){
