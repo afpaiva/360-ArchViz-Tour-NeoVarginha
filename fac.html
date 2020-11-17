@@ -33,18 +33,18 @@
       <div class="footer"></div>
       <div class="horizon"></div>
       <div id="load">
-        <img src="/assets/facade/0.png">
-        <img src="/assets/facade/1.png"> <img src="/assets/facade/2.png"> <img src="/assets/facade/3.png">
-        <img src="/assets/facade/4.png"> <img src="/assets/facade/5.png"> <img src="/assets/facade/6.png">
-        <img src="/assets/facade/7.png"> <img src="/assets/facade/8.png"> <img src="/assets/facade/9.png">
-        <img src="/assets/facade/10.png"><img src="/assets/facade/11.png"><img src="/assets/facade/12.png">
-        <img src="/assets/facade/13.png"><img src="/assets/facade/14.png"><img src="/assets/facade/15.png">
-        <img src="/assets/facade/16.png"><img src="/assets/facade/17.png"><img src="/assets/facade/18.png">
-        <img src="/assets/facade/19.png"><img src="/assets/facade/20.png"><img src="/assets/facade/21.png">
-        <img src="/assets/facade/22.png"><img src="/assets/facade/23.png"><img src="/assets/facade/24.png">
-        <img src="/assets/facade/25.png"><img src="/assets/facade/26.png"><img src="/assets/facade/27.png">
-        <img src="/assets/facade/28.png"><img src="/assets/facade/29.png"><img src="/assets/facade/30.png">
-      </div>
+        <img src="./assets/facade/0.png">
+        <img src="./assets/facade/1.png"> <img src="./assets/facade/2.png"> <img src="./assets/facade/3.png">
+        <img src="./assets/facade/4.png"> <img src="./assets/facade/5.png"> <img src="./assets/facade/6.png">
+        <img src="./assets/facade/7.png"> <img src="./assets/facade/8.png"> <img src="./assets/facade/9.png">
+        <img src="./assets/facade/10.png"><img src="./assets/facade/11.png"><img src="./assets/facade/12.png">
+        <img src="./assets/facade/13.png"><img src="./assets/facade/14.png"><img src="./assets/facade/15.png">
+        <img src="./assets/facade/16.png"><img src="./assets/facade/17.png"><img src="./assets/facade/18.png">
+        <img src="./assets/facade/19.png"><img src="./assets/facade/20.png"><img src="./assets/facade/21.png">
+        <img src="./assets/facade/22.png"><img src="./assets/facade/23.png"><img src="./assets/facade/24.png">
+        <img src="./assets/facade/25.png"><img src="./assets/facade/26.png"><img src="./assets/facade/27.png">
+        <img src="./assets/facade/28.png"><img src="./assets/facade/29.png"><img src="./assets/facade/30.png">
+      </div>..
       <div id="facade"></div>
     </div>
   </body>
@@ -54,7 +54,7 @@
     slider.value = 0;
     
     slider.oninput = ()=>{
-      document.getElementById("facade").style.backgroundImage = "url(/assets/facade/"+slider.value+".png)";
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+slider.value+".png)";
     }
 
     var img = 0;
@@ -62,14 +62,14 @@
     function before(){
       img--;
       img == -1 ? img = 30 : img = img;
-      document.getElementById("facade").style.backgroundImage = "url(/assets/facade/"+img+".png)";
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+img+".png)";
 
     }
 
     function next(){
       img++;
       img == 31 ? img = 0 : img = img;
-      document.getElementById("facade").style.backgroundImage = "url(/assets/facade/"+img+".png)";
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+img+".png)";
 
     }
 
