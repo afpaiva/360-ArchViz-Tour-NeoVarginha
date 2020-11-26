@@ -1,4 +1,7 @@
-const turnConsoleOn = false;
+var turnConsoleOn = false;
+!document.querySelector("#sceneInput") ?
+  turnConsoleOn = false :
+  turnConsoleOn = true;
 
 // Create a Scene instance
 let s0 = new Scene('./assets/scenes/00000.jpg', camera);
@@ -70,6 +73,7 @@ let s61 = new Scene('./assets/scenes/00061.jpg', camera);
 let s62 = new Scene('./assets/scenes/00062.jpg', camera);
 let s63 = new Scene('./assets/scenes/00063.jpg', camera);
 let s64 = new Scene('./assets/scenes/00064.jpg', camera);
+let s65 = new Scene('./assets/scenes/00065.jpg', camera);
 // fim lobby
 
 // 0
@@ -261,11 +265,6 @@ s12.addPoint({
   position: new THREE.Vector3( 49.70, -3.650, -1.253 ),
   name: 'hall',
   scene: s13
-});
-s12.addPoint({
-  position: new THREE.Vector3( -11.06, -1.410, -48.57 ),
-  name: 'hall',
-  scene: s11
 });
 s12.addPoint({
   position: new THREE.Vector3( 23.90, -5.158, -43.33 ),
@@ -892,9 +891,19 @@ s44.addPoint({
   scene: s11
 });
 s44.addPoint({
-  position: new THREE.Vector3( -36.71, -3.819, 33.41),
+  position: new THREE.Vector3( -45.77, -2.750, 19.87),
   name: 'hall',
   scene: s12
+});
+s44.addPoint({
+  position: new THREE.Vector3( 8.096, 11.31, -47.99),
+  name: 'lazer',
+  scene: s45
+});
+s44.addPoint({
+  position: new THREE.Vector3( 7.958, -10.36, -48.25),
+  name: 'lobby',
+  scene: s62
 });
 // fim apartamentos
 
@@ -1210,9 +1219,42 @@ s61.addPoint({
 // fim area lazer
 // lobby
 s62.addPoint({
-  position: new THREE.Vector3( -2.103, 0.2922, -49.78),
-  name: 'hall',
-  scene: s46
+  position: new THREE.Vector3( -10.12, -2.001, 48.87),
+  name: 'espaço pet',
+  scene: s65
+});
+s62.addPoint({
+  position: new THREE.Vector3( 0.6673, -1.891, 49.92),
+  name: 'apartamentos',
+  scene: s44
+});
+s62.addPoint({
+  position: new THREE.Vector3( -7.446, -1.382, -49.39),
+  name: 'acesso',
+  scene: s63
+});
+// 63
+s63.addPoint({
+  position: new THREE.Vector3( 4.680, -0.8781, 49.73),
+  name: 'lobby',
+  scene: s62
+});
+s63.addPoint({
+  position: new THREE.Vector3( -49.93, -0.9718, 1.036),
+  name: 'acesso',
+  scene: s64
+});
+// 64
+s64.addPoint({
+  position: new THREE.Vector3( 49.94, 0.3861, 1.364),
+  name: 'acesso',
+  scene: s63
+});
+// 65
+s65.addPoint({
+  position: new THREE.Vector3( -36.01, -0.2699, -34.64),
+  name: 'lobby',
+  scene: s62
 });
 // fim lobby
 
@@ -1259,7 +1301,7 @@ function sceneJump(){
     s30, s31, s32, s33, s34, s35, s36, s37, s38, s39,
     s40, s41, s42, s43, s44, s45, s46, s47, s48, s49,
     s50, s51, s52, s53, s54, s55, s56, s57, s58, s59,
-    s60, s61
+    s60, s61, s62, s63, s64, s65
   ];
   
   for (let i=0; i<arrScenes.length; i++){
