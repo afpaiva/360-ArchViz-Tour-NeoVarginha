@@ -26,7 +26,8 @@ class Scene {
         } );
 
         // Create a geometry -> sphere &AND apply the material
-        const geometry = new THREE.SphereGeometry( 50, 32, 32 );
+        //const geometry = new THREE.SphereGeometry( 50, 32, 32 );
+        const geometry = new THREE.SphereBufferGeometry( 50, 80, 60 );
         this.sphere = new THREE.Mesh( geometry, material );
         this.scene.add( this.sphere );
         this.points.forEach(this.addTooltip.bind(this));

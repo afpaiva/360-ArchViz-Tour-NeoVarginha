@@ -66,6 +66,11 @@ let s59 = new Scene('./assets/scenes/00059.jpg', camera);
 let s60 = new Scene('./assets/scenes/00060.jpg', camera);
 let s61 = new Scene('./assets/scenes/00061.jpg', camera);
 // fim lazer
+// lobby
+let s62 = new Scene('./assets/scenes/00062.jpg', camera);
+let s63 = new Scene('./assets/scenes/00063.jpg', camera);
+let s64 = new Scene('./assets/scenes/00064.jpg', camera);
+// fim lobby
 
 // 0
 s0.addPoint({
@@ -1203,6 +1208,13 @@ s61.addPoint({
 });
 //
 // fim area lazer
+// lobby
+s62.addPoint({
+  position: new THREE.Vector3( -2.103, 0.2922, -49.78),
+  name: 'hall',
+  scene: s46
+});
+// fim lobby
 
 
 
@@ -1228,7 +1240,13 @@ else if (queryString === "?ap4"){
 else if (queryString === "?lazer"){
   s45.createScene(scene);
   s45.appear();
-}else{
+}
+else if (queryString === "?lobby"){
+  s64.createScene(scene);
+  s64.appear();
+}
+else
+{
   window.location.href = "fac.html";
 }
 
