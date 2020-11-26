@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>360TourEnsaios3D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#000" />
+
+	</head>
+	<body>
+    <div class="fac-container">
+      <div class="slidecontainer">
+        <input type="range" min="0" max="29" value="50" class="slider" id="valueRange">
+      </div>
+      <!--
+      <div class="controls">
+          <div class="button-before" onclick="before()"></div>
+          <div class="button-next" onclick="next()"></div>
+      </div>
+      -->
+      <div class="shortcuts-container">
+        <div class="shortcuts">
+          <a href="index.html?lobby" class="button">Lobby</a> |
+          <a href="index.html?ap1" class="button">Tipo&nbsp;1</a> |
+          <a href="index.html?ap2" class="button">Tipo&nbsp;2</a> |
+          <a href="index.html?ap3" class="button">Tipo&nbsp;3</a> |
+          <a href="index.html?ap4" class="button">Tipo&nbsp;4</a> |
+          <a href="index.html?lazer" class="button">Área de Lazer</a>
+        </div>
+      </div>
+      <div class="footer"></div>
+      <div class="horizon"></div>
+      <div id="load">
+        <img src="./assets/facade/0.png">
+        <img src="./assets/facade/1.png"> <img src="./assets/facade/2.png"> <img src="./assets/facade/3.png">
+        <img src="./assets/facade/4.png"> <img src="./assets/facade/5.png"> <img src="./assets/facade/6.png">
+        <img src="./assets/facade/7.png"> <img src="./assets/facade/8.png"> <img src="./assets/facade/9.png">
+        <img src="./assets/facade/10.png"><img src="./assets/facade/11.png"><img src="./assets/facade/12.png">
+        <img src="./assets/facade/13.png"><img src="./assets/facade/14.png"><img src="./assets/facade/15.png">
+        <img src="./assets/facade/16.png"><img src="./assets/facade/17.png"><img src="./assets/facade/18.png">
+        <img src="./assets/facade/19.png"><img src="./assets/facade/20.png"><img src="./assets/facade/21.png">
+        <img src="./assets/facade/22.png"><img src="./assets/facade/23.png"><img src="./assets/facade/24.png">
+        <img src="./assets/facade/25.png"><img src="./assets/facade/26.png"><img src="./assets/facade/27.png">
+        <img src="./assets/facade/28.png"><img src="./assets/facade/29.png"><img src="./assets/facade/30.png">
+      </div>..
+      <div id="facade"></div>
+    </div>
+  </body>
+  <script>
+
+    var slider = document.getElementById("valueRange");
+    slider.value = 0;
+    
+    slider.oninput = ()=>{
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+slider.value+".png)";
+    }
+
+    var img = 0;
+
+    function before(){
+      img--;
+      img == -1 ? img = 30 : img = img;
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+img+".png)";
+
+    }
+
+    function next(){
+      img++;
+      img == 31 ? img = 0 : img = img;
+      document.getElementById("facade").style.backgroundImage = "url(./assets/facade/"+img+".png)";
+
+    }
+
+    document.addEventListener("keypress", (event) => {
+      if (event.keyCode == 27 || event.keyCode == 46) {
+      next();
+      }
+      if (event.keyCode == 25 || event.keyCode == 44) {
+      before();
+      }
+    });
+
+  </script>
+</html>

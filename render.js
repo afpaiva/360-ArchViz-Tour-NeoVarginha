@@ -116,6 +116,9 @@ function openFullscreen() {
     }
 }
 
+function openHome(){
+  window.location.href = "fac.html";
+}
 
 window.addEventListener('resize', onResize);
 container.addEventListener('click', onClick);
