@@ -905,6 +905,16 @@ s44.addPoint({
   name: 'lobby',
   scene: s62
 });
+s44.addPoint({
+  position: new THREE.Vector3( 7.012, 10.02, 46.45),
+  name: 'lazer',
+  scene: s45
+});
+s44.addPoint({
+  position: new THREE.Vector3( 6.848, -16.27, 46.74),
+  name: 'lobby',
+  scene: s62
+});
 // fim apartamentos
 
 // area de lazer
@@ -1219,34 +1229,34 @@ s61.addPoint({
 // fim area lazer
 // lobby
 s62.addPoint({
-  position: new THREE.Vector3( -10.12, -2.001, 48.87),
+  position: new THREE.Vector3( 14.00, -0.3700, -47.95),
   name: 'espaço pet',
   scene: s65
 });
 s62.addPoint({
-  position: new THREE.Vector3( 0.6673, -1.891, 49.92),
+  position: new THREE.Vector3( 3.891, -0.3893, -49.84),
   name: 'apartamentos',
   scene: s44
 });
 s62.addPoint({
-  position: new THREE.Vector3( -7.446, -1.382, -49.39),
+  position: new THREE.Vector3( 11.97, 0.2850, 48.53),
   name: 'acesso',
   scene: s63
 });
 // 63
 s63.addPoint({
-  position: new THREE.Vector3( 4.680, -0.8781, 49.73),
+  position: new THREE.Vector3( 21.01, -2.108, -45.27),
   name: 'lobby',
   scene: s62
 });
 s63.addPoint({
-  position: new THREE.Vector3( -49.93, -0.9718, 1.036),
+  position: new THREE.Vector3( 49.92, 0.1116, -1.903),
   name: 'acesso',
   scene: s64
 });
 // 64
 s64.addPoint({
-  position: new THREE.Vector3( 49.94, 0.3861, 1.364),
+  position: new THREE.Vector3( -49.96, -0.1793, -0.9666),
   name: 'acesso',
   scene: s63
 });
