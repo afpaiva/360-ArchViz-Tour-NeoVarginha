@@ -24,8 +24,9 @@ function onClick(e){
       }
   })
 
-  // Open to find an intersection between sphere and raycast
+  // Find an intersection between sphere and raycast
   if (turnConsoleOn){
+      
       let intersect = rayCaster.intersectObject(s0.sphere);
       if (intersect.length > 0){
           debug.innerHTML = intersect[0].point.x.toPrecision(4)

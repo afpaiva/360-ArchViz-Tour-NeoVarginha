@@ -4,20 +4,21 @@
 		<meta charset="utf-8">
 		<title>360TourEnsaios3D</title>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#000" />
 
 	</head>
 	<body>
+		<div id="loading">
+			<img id="loading-image" src="assets/loading.gif" alt="Loading..." />
+		</div>
 		<div class="shortcuts-container">
 			<div class="shortcuts">
-				<a href="index.html?lobby" class="button">Lobby</a> |
-				<a href="index.html?ap1" class="button">Tipo&nbsp;1</a> |
-				<a href="index.html?ap2" class="button">Tipo&nbsp;2</a> |
-				<a href="index.html?ap3" class="button">Tipo&nbsp;3</a> |
-				<a href="index.html?ap4" class="button">Tipo&nbsp;4</a> |
-				<a href="index.html?lazer" class="button">Área de Lazer</a>
+				<a onclick="openHome()" class="button">Fachada</a> | 
+				<a href="index.html?lobby" class="button">Acesso</a> | 
+				<a href="index.html?elevador" class="button">Elevador</a> |
+				<a onclick="openFullscreen()" class="button">Tela cheia</a>
 			</div>
 		</div>
 		<div class="viewport"></div>
@@ -33,6 +34,10 @@
 				<img width="30px" height="30px" src="./assets/home.png" onclick="openHome()">
 			</div>
 		</div>
+		<div class="info">
+			<img width="30px" onmouseover="info(1)" onmouseout="info(0)" height="30px" src="./assets/info.png">
+			<div id="info-text">Utilize o elevador para alternar<br>entre pavimentos e apartamentos.<br><br>Imagens meramente ilustrativas.</div>
+		</div>
 		<div class="hotspotLabel"></div>
 
 		<script src="tools/three.js"></script>
@@ -40,5 +45,26 @@
 		<script src="app.js"></script>
 		<script src="config.js"></script>
 		<script src="render.js"></script>
+		<script>
+		window.onload = ()=> {
+      document.getElementById("loading").style.height = "0px";
+		};
+		
+		document.getElementById("info-text").style.width = "0px";
+    document.getElementById("info-text").style.padding = "0px";
+    function info(e){
+      let info = document.getElementById("info-text").style;
+      if (e) {
+        info.width="350px";
+        info.padding="10px";
+      }
+      else {
+        info.width="0px";
+        info.padding="0px";
+			}
+		}
+
+
+		</script>
 	</body>
 </html>
