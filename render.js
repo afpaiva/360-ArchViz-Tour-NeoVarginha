@@ -11,6 +11,8 @@ controls.autoRotate = true;
 camera.position.set(1, 0 , 0);
 controls.update();
 
+const rayCaster = new THREE.Raycaster();
+
 function onClick(e){
   let mouse = new THREE.Vector2(
       ( e.clientX / window.innerWidth ) * 2 - 1,
@@ -67,8 +69,6 @@ function onResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
 }
-
-const rayCaster = new THREE.Raycaster();
 
 function onMouseMove(e){
   let mouse = new THREE.Vector2(
